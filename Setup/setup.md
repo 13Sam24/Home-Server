@@ -21,3 +21,9 @@ The next thing to do it to put ubuntu server on the server. To do this I downloa
 ## 4. SSH
 
 Once it was setup I setup SSH so that I am able to access the device from my main computer. This will let me connect it to ethernet nearer the router without me having to go down there very time when I want to do something. To make sure that it stays secure I made sure to add an SSH key to the server. This was generated through the windows terminal. This works through the server using the public key that I provided it to encrypt a message and sending it to the device that wants to connect. If that device can unencrypt it correctly and sends back the correct message then it is allows access. I have done this to make the server more secure as I don't want anyone on the WIFI to be able to access the server incase they should not be on the WIFI or dont know what they are doing.
+
+## 5. Mounting the HDD
+
+Since the HDD was unplugged during the setup I then had to plug it back in and mount it. I did this by first erasing it. To do this I first had to find the name of the drive with the command 'lsblk' which listed all my drives. I then formatted it with 'sudo mkfs.ext4 /dev/sda1. I then made a new directory called hdd1 in the /mnt directory and mounted it with 'sudo mount /dev/sda1 /mnt/hdd1' This kept the file structure clean so it is easier to manage.
+
+Since the server runs ubuntu I have found that the easiest way to run multiple things is through installing docker. Docker is a platform that can be used to run applications and manage them. They can be easaly set up with a .yml file. To set this up I first installed it with
