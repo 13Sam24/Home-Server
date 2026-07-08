@@ -26,4 +26,5 @@ Once it was setup I setup SSH so that I am able to access the device from my mai
 
 Since the HDD was unplugged during the setup I then had to plug it back in and mount it. I did this by first erasing it. To do this I first had to find the name of the drive with the command 'lsblk' which listed all my drives. I then formatted it with 'sudo mkfs.ext4 /dev/sda1. I then made a new directory called hdd1 in the /mnt directory and mounted it with 'sudo mount /dev/sda1 /mnt/hdd1' This kept the file structure clean so it is easier to manage.
 
-Since the server runs ubuntu I have found that the easiest way to run multiple things is through installing docker. Docker is a platform that can be used to run applications and manage them. They can be easaly set up with a .yml file. To set this up I first installed it with
+## 6. Docker
+Since the server runs ubuntu I have found that the easiest way to run multiple things is through installing docker. Docker is a platform that can be used to run applications and manage them. They can be easily set up with a .yml file. To set this up I need to install the docker engine. This is done through a series of commands listed on the https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository website.
