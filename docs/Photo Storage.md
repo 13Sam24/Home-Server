@@ -7,3 +7,4 @@ The first thing that I want to self host is a method of photo storage as my fami
 In order to install Immich I followed the instructions on the website to get the docker compose file. https://docs.immich.app/install/docker-compose/. I had a few issues when setting it up with the HDD not being mounted so I had to setup the software a few times however once it was running properly it was very easy to run through the setup process to get to the main page.
 
 ## 3. Immich
+Once it is installed it is very easy to set it up just by running through the default installer. It helps you to set up an account. Once it is set up it is very easy to make more accounts and give them permissions. 
